@@ -1,9 +1,19 @@
+body{
+    background-color: black;
+    color: white;
+}
+header{
+    text-align: center;
+}
 main{
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 canvas{
+  border-style: double;
+  border-width: thick;
+  border: 10px solid white;
   width: 100%;
   max-width: 80vh;
   border-radius: 10px 10px;
