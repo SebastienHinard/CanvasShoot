@@ -192,6 +192,10 @@ function updateEnemyT01(e){
     if (enemies[e].y> 270 || enemies[e].life<=0){
         if (enemies[e].life<=0){
             score +=10;
+            for (var p=0; p<6.3; p+=.3){
+                addParticle(enemies[e].x+Math.cos(p)*16,enemies[e].y+Math.sin(p)*16,Math.cos(p)/2,Math.sin(p)/2,30);
+                addParticle(enemies[e].x+Math.cos(p)*16,enemies[e].y+Math.sin(p)*16,Math.cos(p),Math.sin(p),20);
+            }
         }
         enemies.splice(e,1);
     }else{
