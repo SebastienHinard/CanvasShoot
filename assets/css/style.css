@@ -4,19 +4,26 @@ body{
 }
 header{
     text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5em;
 }
 main{
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-family: 'Prompt', sans-serif;
+}
+p{
+    margin: 0px;
 }
 canvas{
-  border-style: double;
-  border-width: thick;
-  border: 10px solid white;
-  width: 100%;
-  max-width: 80vh;
-  border-radius: 10px 10px;
-  box-shadow: 1px 1px 10px;
-  image-rendering:pixelated;
+    border-style: double;
+    border-width: thick;
+    border: 10px solid white;
+    width: 100%;
+    max-width: 80vh;
+    border-radius: 10px 10px;
+    box-shadow: 1px 1px 10px;
+    image-rendering:pixelated;
+    margin-bottom: 5px;
 }
